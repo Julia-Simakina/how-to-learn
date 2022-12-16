@@ -64,6 +64,7 @@
   position: absolute;
   width: 765px;
   height: 608px;
+  object-fit: cover;
   bottom: 0;
   right: 0;
   z-index: 1;
@@ -306,7 +307,7 @@
   padding-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 .footer__social-icon {
