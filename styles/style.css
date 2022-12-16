@@ -34,19 +34,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 730px;
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 730px;
   padding-left: 64px;
   line-height: 96px;
   font-size: 102px;
-  font-style: 600;
+  font-weight: 600;
   z-index: 2;
 }
 
 .header__subtitle {
   position: absolute;
   left: 64px;
+  margin: 0;
   bottom: 30px;
-  width: 388px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   z-index: 2;
@@ -57,7 +60,7 @@
   text-decoration: none;
 }
 
-.main-illustration {
+.header__main-illustration {
   position: absolute;
   width: 765px;
   height: 608px;
@@ -89,7 +92,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   line-height: 1.2;
   color: #2f80ed;
   font-size: 18px;
@@ -103,7 +106,7 @@
 }
 
 .two-columns__span-accent {
-  font-style: 600;
+  font-weight: 600;
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
@@ -116,7 +119,7 @@
   margin-bottom: 30px;
 }
 
-.two-columns__paragraph:nth-of-type(3n) {
+.two-columns__paragraph:last-of-type{
   margin-bottom: 0;
 }
 
@@ -158,14 +161,14 @@
   margin: 0;
   line-height: 1.15;
   font-size: 60px;
-  font-style: 600;
+  font-weight: 600;
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
-  font-style: 600;
-  margin: 0;
+  font-weight: 600;
 }
 
 .table__text {
@@ -177,6 +180,7 @@
 
 .feynman {
   position: relative;
+  box-sizing:border-box;
   min-height: 890px;
   padding-top: 100px;
   background-color: #f2f2f2;
@@ -188,11 +192,11 @@
 
 .feynman__title {
   margin: auto;
-  width: 648px;
+  max-width: 648px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
-  font-style: 600;
+  font-weight: 600;
 }
 
 .feynman__subtitle {
@@ -276,7 +280,7 @@
   justify-content: space-between;
 }
 
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
@@ -293,7 +297,7 @@
 .footer__column-links {
   margin: 0;
   padding: 0;
-  padding-bottom: 16;
+  padding-bottom: 16px;
   list-style: none;
   text-decoration: none;
 }
@@ -303,7 +307,7 @@
   padding-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
-  font-style: 600px;
+  font-weight: 600px;
 }
 
 .footer__social-icon {
@@ -316,5 +320,6 @@
   line-height: 30px;
   font-size: 18px;
   text-decoration: none;
+  list-style: none;
   color: white;
 }
